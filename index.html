@@ -132,13 +132,14 @@
       <label for="name">Name</label>
       <input id="name" type="text" placeholder="Enter your name" /> <br />
       <!-- Password input field -->
-       <label for="password">Password</label>
-      <input id="password" type="password" placeholder="Enter your password" /> <br />
+      <label for="password">Password</label>
+      <input id="password" type="password" placeholder="Enter your password" />
+      <br />
       <!-- Email input field -->
-       <label for="email">Email</label>
+      <label for="email">Email</label>
       <input id="email" type="email" placeholder="Enter your email" /> <br />
       <!-- Number input field -->
-       <label for="number">Number</label>
+      <label for="number">Number</label>
       <input id="number" type="number" placeholder="Enter your age" /> <br />
       <!-- Date input field -->
       <input type="date" /> <br />
@@ -173,5 +174,17 @@
       <!-- Submit button -->
       <input type="submit" value="Submit" />
     </form>
+    <br>
+
+    <!-- datalist -->
+    <input list="browsers" name="browser" placeholder="select one browser" />
+    <datalist id="browsers">
+      <option value="Chrome"></option>
+      <option value="Firefox"></option>
+      <option value="Safari"></option>
+      <option value="Edge"></option>
+    </datalist>
+
+    <br /><br />
   </body>
 </html>
