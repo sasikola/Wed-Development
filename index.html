@@ -23,52 +23,85 @@
     <!-- Attribute with value -->
     <h1 class="" id="" style="color: red">Hello world</h1>
 
-
     <!-- HTML Lists -->
-     <!-- Ordered list -->
-      <ol type="A">
-        <li>Apple</li>
-        <li>Banana</li>
-        <li>Cherry</li>
-      </ol>
-      <!-- Unordered list -->
-      <ul>
-        <li>Apple</li>
-        <li>Banana</li>
-        <li>Cherry</li>
-      </ul>
-      
-     
-      
-    <!-- HTML Tables -->
-      <table border="1" rules="all">
-        <tr>
-          <th>Name</th>
-          <th>Age</th>
-          <th>City</th>
-          <th>Country</th>
-          <th>Job</th>
-        </tr>
-        <tr>
-          <td>John</td>
-          <td>25</td>
-          <td>New York</td>
-          <td>USA</td>
-          <td>Developer</td>
+     <h3>Unordered List</h3>
+    <!-- type attribute defines the type of list (numbered, alphabetical, etc.) -->
+    <!-- Ordered list -->
+    <ol type="A">
+      <li>Apple</li>
+      <li>Banana</li>
+      <li>Cherry</li>
+    </ol>
+    <h3>Unordered List</h3>
+    <!-- type attribute defines the type of list (disc, circle, square, etc.) -->
+    <!-- Unordered list -->
+    <ul>
+      <li>Apple</li>
+      <li>Banana</li>
+      <li>Cherry</li>
+    </ul>
 
+    <!-- HTML Tables -->
+     <h3>Simple Table</h3>
+    <!-- border attribute adds a border around the table -->
+    <table border="1" rules="all">
+      <tr>
+        <th>Name</th>
+        <th>Age</th>
+        <th>City</th>
+        <th>Country</th>
+        <th>Job</th>
+      </tr>
+      <tr>
+        <td>John</td>
+        <td>25</td>
+        <td>New York</td>
+        <td>USA</td>
+        <td>Developer</td>
+      </tr>
+      <tr>
+        <td>Alice</td>
+        <td>30</td>
+        <td>London</td>
+        <td>UK</td>
+        <td>Designer</td>
+      </tr>
+    </table>
+    <br>
+
+    <!-- Rowspan and colspan -->
+     <h3>Row span and colspan</h3>
+    <table border="1" rules="all">
+      <thead>
+        <tr>
+          <th>Column1</th>
+          <th>Column2</th>
+          <th>Column3</th>
+          <th>Column4</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td rowspan="2">Row 1, Column 1</td>
+          <td>Row 1, Column 2</td>
+          <td>Row 1, Column 3</td>
+          <td>Row 1, Column 4</td>
         </tr>
         <tr>
-          <td>Alice</td>
-          <td>30</td>
-          <td>London</td>
-          <td>UK</td>
-          <td>Designer</td>
+          <td>Row 2, Column 2</td>
+          <td>Row 2, Column 3</td>
+          <td>Row 2, Column 4</td>
         </tr>
-      </table>
-      
-      
-      
-    <!-- HTML Forms -->
-     
+        <tr>
+          <td colspan="2">Row 3, Column 1 and 2</td>
+          <td>Row 3, Column 3</td>
+          <td>Row 3, Column 4</td>
+        </tr>
+        <tr>
+          <td>Row 4, Column 1</td>
+          <td>Row 4, Column</td>
+        </tr>
+      </tbody>
+    </table>
   </body>
 </html>
