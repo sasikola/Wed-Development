@@ -173,17 +173,116 @@
 // console.log(a)
 // console.log(--a)
 
-
-
 // let x = 5;
 // let y = 10;
 
 // x++
-// console.log("x=", x )  
+// console.log("x=", x )
 // ++y
 
 // console.log("y=", y )
 // let result = x + y
 // console.log(result)
 
+// assignment operators
+// to assing a value to the variable
+// =, +=, -=, *=, %=
+// let a = 5
+// let b = a;
+// console.log(b)
+
+// // a += 10;  // a = a+10 --> a = 5+10
+// a %= 10;  // a = a-10 --> a = 5-10
+// console.log(a)
+
+// comparison operators
+// comparing two values
+// ==, ===, !=, !==, >, <, >=, <=
+
+// boolean values --> true or false
+
+// console.log(5 == "5"); // true  //value
+// console.log(5 === "5"); // false // value + datatype
+
+// console.log(5 != "5")  // false
+// console.log(5 !== "5")  // true
+
+// console.log(5 >= 5) // false
+
+// logical operators
+// comparing two conditions
+// &&, ||, !
+// it will return a boolean values (true or false)
+
+// let a = 5;
+// let b = 3;
+
+// &&
+// True and True --> true
+// true and false --> false
+// false and true --> false
+// false and false --> false
+
+// console.log(a == 5 && b == 3); // true
+
+// ||
+// true and true --> true
+// true and false --> true
+// false and true --> true
+// false and false --> false
+
+// console.log(a == 5 || b == 2); // true
+
+// !
+// not of true --> false
+// not of false --> true
+// console.log(!(5 == 5) || !(2 == 2));
+// console.log((3 == 2))
+
+// let a = true;
+// let b = false;
+// let c = true;
+
+// console.log((a || b)  && c)
+
+// conditional statements
+// boolean values (true or false)
+// if, else, else if
+
+// let a = 13;
+// if (a == 10) {
+//   //false
+//   console.log("the given number is ", a);
+// }
+
+// if (5 === 6) {
+//   // false
+//   console.log("the condition is true");
+// } else {
+//   console.log("The condition is false");
+// }
+
+// let age = prompt("Enter your age");
+// // let age = 19;
+// if (age >= 18) {
+//   //false
+// //   console.log("your age is ", age + " you are eligible for vote");
+// console.log(`your age is ${age} and you are eligible for voting`)
+//   console.log(typeof age);
+// } else {
+//   console.log(" your age is ", age + " you are not eligible for vote");
+//   console.log(typeof age);
+// }
+
+// let a = Number(prompt("Enter a number"));
+// let b = parseInt(prompt("Enter a number"));
+// if (a) {
+//   console.log("this is a number");
+//   console.log(typeof a);
+// }
+// console.log(!(5 == 5));
+// console.log((5 == 5) && (2 == 2));
+
+
+// &&, ||, !
 
