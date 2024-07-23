@@ -286,3 +286,5 @@
 
 // &&, ||, !
 
+// !true  --> false
+// !false --> true
