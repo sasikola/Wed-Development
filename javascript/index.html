@@ -4,10 +4,33 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    
   </head>
   <body>
-    <h1>Hello</h1>
+    <form action="">
+      <label for="name">Name</label>
+      <input type="text" name="name" placeholder="Enter your name" id="name" />
+      <br />
+      <label for="email">Email</label>
+      <input
+        type="email"
+        placeholder="Enter your email"
+        id="email"
+        name="email"
+      />
+      <br />
+      <label for="password">Password</label>
+      <input
+        type="password"
+        placeholder="Enter your password"
+        id="password"
+        name="password"
+      />
+
+      <br />
+      <button onclick="formValidation()" type="button">Submit</button>
+      <!-- <input type="submit" value="login"> -->
+    </form>
+    <p id="errorMessage" style="color: red"></p>
 
     <script src="./script.js"></script>
   </body>

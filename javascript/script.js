@@ -247,7 +247,7 @@
 
 // conditional statements
 // boolean values (true or false)
-// if, else, else if
+// if, else, if else if
 
 // let a = 13;
 // if (a == 10) {
@@ -283,8 +283,107 @@
 // console.log(!(5 == 5));
 // console.log((5 == 5) && (2 == 2));
 
-
 // &&, ||, !
 
 // !true  --> false
 // !false --> true
+
+// if else if
+
+// let score = prompt("Enter your results")
+// if (score >= 90) {
+//   console.log("Grade A");
+// } else if (score >= 80) {
+//   console.log("Grade B");
+// } else if (score >= 70) {
+//   console.log("Grade C");
+// } else if (score >= 60) {
+//   console.log("Grade D");
+// } else {
+//   console.log("exam not attended");
+// }
+
+// function formValidation() {
+//   let name = document.getElementById("name").value;
+//   let email = document.getElementById("email").value;
+//   let password = document.getElementById("password").value;
+//   let errorMessage = document.getElementById("errorMessage");
+
+//   let errors = [];
+//   if (name === "") {
+//     errors.push("Name is required");
+//   } else if (email === "") {
+//     errors.push("Email is required");
+//   } else if (password === "") {
+//     errors.push("Password is required");
+//   } else if (password < 8) {
+//     errors.push("Password should be at least 8 characters long");
+//   }
+
+//   //   display errors
+//   if (errors.length > 0) {
+//     errorMessage.innerHTML = errors.join("<br>");
+//     return false;
+//   } else {
+//     errorMessage.innerHTML = "Form submitted successfully";
+//   }
+// }
+
+// ternary operator
+//  condtion ?  statement1 : statement2
+
+// 5 == 5 ? console.log("statement1") : console.log("Statement2")
+let a = 2;
+// if (a % 2 === 0) {
+//   console.log("Even");
+// } else {
+//   console.log("Odd");
+// }
+
+// a % 2 === 0 ? console.log("Even") : console.log("Odd")
+
+// Loops
+// for
+// while
+// do while
+
+// for(initialization; condtion; incr/decr)
+
+// for (i = 0; i <= 10; i++) {
+//   console.log(i);
+// }
+
+// let i = 0
+// while(condition){
+//     statements
+// i++
+// }
+
+// let i = 1;
+// while (i <= 10) {
+//     console.log(i);
+//     i++;
+// }
+
+// let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+// for (let i = 0; i < numbers.length; i++) {
+//   let number = numbers[i];
+//   if (number % 2 === 0) {
+//     console.log(number);
+//   }
+// }
+
+let numOfInputs = Number(prompt("How many inputs do you want?"));
+let sum = 0;
+for (let i = 0; i < numOfInputs; i++) {
+  let inputs = Number(prompt("Enter number" + (i + 1) + ":"));
+  sum += inputs; // sum = sum + inputs
+}
+
+console.log("The sum of the numbers is: ", sum);
+
+
+// 7, 10, 3
+// factorial
+// 5 -> 5* 4* 3*2*1
