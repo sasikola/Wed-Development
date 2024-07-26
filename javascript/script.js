@@ -333,7 +333,7 @@
 //  condtion ?  statement1 : statement2
 
 // 5 == 5 ? console.log("statement1") : console.log("Statement2")
-let a = 2;
+// let a = 2;
 // if (a % 2 === 0) {
 //   console.log("Even");
 // } else {
@@ -374,16 +374,157 @@ let a = 2;
 //   }
 // }
 
-let numOfInputs = Number(prompt("How many inputs do you want?"));
-let sum = 0;
-for (let i = 0; i < numOfInputs; i++) {
-  let inputs = Number(prompt("Enter number" + (i + 1) + ":"));
-  sum += inputs; // sum = sum + inputs
-}
+// let numOfInputs = Number(prompt("How many inputs do you want?"));
+// let sum = 0;
+// for (let i = 0; i < numOfInputs; i++) {
+//   let inputs = Number(prompt("Enter number" + (i + 1) + ":"));
+//   sum += inputs; // sum = sum + inputs
+// }
 
-console.log("The sum of the numbers is: ", sum);
-
+// console.log("The sum of the numbers is: ", sum);
 
 // 7, 10, 3
 // factorial
 // 5 -> 5* 4* 3*2*1
+
+// ternary operator
+
+// if (false) {
+//   console.log("Statement1");
+// } else {
+//   console.log("Statement2");
+// }
+
+// condtion ? statement1 : statement2
+
+// let b = 10
+// b == 11 ? console.log("Statement1") : console.log("Statement2")
+
+// loops
+// for(initialization; condition; incr/decr)
+
+// for (let i = 1; i <= 10; i++) {
+//   console.log(i);
+// }
+
+// while
+// let i = 0;
+// while (i <= 10) {
+//   console.log(i);
+//   i++;
+// }
+
+// let i = 0;
+// do {
+//   console.log(i);
+//   i++;
+// } while (i <= 10);
+
+// let num = Number(prompt("Enter a number"));
+// let sum = 0;
+// for (let i = 0; i < num; i++) {
+//   let inputs = Number(prompt("Enter number: ", i + 1));
+//   sum = sum + inputs;
+// }
+// console.log(sum);
+
+// functions
+// general function
+// arrow function
+// ananymous function
+// self-invoking function/immediately invoking function
+
+// let a = 10;
+// let b = 3;
+// let sum = a + b;
+
+// console.log(sum)
+// code reusablity
+// less coding
+
+// general function
+// function Addition() {
+//   let a = 10;
+//   let b = 3;
+//   let sum = a + b;
+//   console.log(sum);
+// }
+
+// Addition()
+// arrow function
+// let Addition = () => {
+//   let a = 10;
+//   let b = 3;
+//   let sum = a + b;
+//   console.log(sum);
+// };
+// Addition();
+
+// ananymous
+// let Addition = function () {
+//   let a = 10;
+//   let b = 3;
+//   let sum = a + b;
+//   console.log(sum);
+// };
+// Addition()
+
+// self-invoking function/immediately invoking function
+// (function () {
+//   let a = 10;
+//   let b = 3;
+//   let sum = a + b;
+//   console.log(sum);
+// })();
+
+// function myFunc1(a, b) {
+//   console.log(a + b);
+// }
+
+// myFunc1(2, 3);
+
+// function myFunc2(a, b, c, d, e, f) {
+//   a = 10;
+//   b = 20;
+//   return a + b + c + d;
+// }
+// let result = myFunc2();
+// console.log(result);
+
+// let myFunction = function () {
+//   let a = 10;
+//   let b = 20;
+//   let sum = a + b;
+//   console.log(sum)
+// };
+
+// Arrays
+let x = [1, 2, 4, 5, 6];
+let y = ["apple", "orange"];
+let z = [true, false];
+
+let num = [12, 3, "apple", true];
+console.log(num[1]);
+
+console.log(num.length);
+// push  --> adding element to the array from the end
+// pop   --> removing element from end
+// shift  --> removing element from beginning
+// unshift  --> adding element from beginning
+
+// num.push(10);
+// console.log(num);
+// num.unshift("element");
+// console.log(num);
+// num.pop();
+// console.log(num);
+
+// num.shift();
+// console.log(num);
+
+let fruits = ["apple", "banana", "orange", "grape", "mobile"];
+
+// splice --> changing the contents/items in the array by removing, replacing or adding elements
+// console.log(fruits);
+// console.log(fruits.splice(1, 3, "grape", "Blueberry"));
+// console.log(fruits)
