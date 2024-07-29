@@ -499,14 +499,14 @@
 // };
 
 // Arrays
-let x = [1, 2, 4, 5, 6];
-let y = ["apple", "orange"];
-let z = [true, false];
+// let x = [1, 2, 4, 5, 6];
+// let y = ["apple", "orange"];
+// let z = [true, false];
 
-let num = [12, 3, "apple", true];
-console.log(num[1]);
+// let num = [12, 3, "apple", true];
+// console.log(num[1]);
 
-console.log(num.length);
+// console.log(num.length);
 // push  --> adding element to the array from the end
 // pop   --> removing element from end
 // shift  --> removing element from beginning
@@ -522,9 +522,109 @@ console.log(num.length);
 // num.shift();
 // console.log(num);
 
-let fruits = ["apple", "banana", "orange", "grape", "mobile"];
+// let fruits = ["apple", "banana", "orange", "grape", "mobile"];
 
 // splice --> changing the contents/items in the array by removing, replacing or adding elements
 // console.log(fruits);
 // console.log(fruits.splice(1, 3, "grape", "Blueberry"));
 // console.log(fruits)
+
+// using index value we can access array element
+// methods in arrays
+// push, pop, shift, unshift, slice and splice
+
+// y.slice(1, 3) // 2 and 3
+// y.splice(1, 2, 10, 20)  //
+
+// console.log(y)
+
+// toString()
+// console.log(y.toString());
+// to string method
+
+// console.log(fruits.toString());
+// console.log(fruits)
+// console.log(fruits.length)
+// // at
+// let fruit = fruits.at(3)
+// console.log(fruit)
+
+// join
+// console.log(fruits.join(" "))
+
+// concat  --> merging two or more arrays in a new array
+
+// let x = [1, 2, 3];
+// let y = [4, 5, 6];
+// let z = [8, 9, 10]
+
+// flat  --> it creates a new array with sub-array elements
+// let x = [[1,2], [3,4], [5,6]]
+// [1,2,3,4,5,6]
+
+// let newArray = x.flat()
+// console.log(newArray)
+// let newArray = x.concat(y, z)
+// console.log(newArray)
+
+// searching methods
+// sorting methods
+// iteration methods
+
+// indexOf()
+// it will search the array element and return its position
+
+// console.log(x.indexOf(5))
+// console.log(x.indexOf(3))
+
+// let fruits = ["apple", "banana", "orange", "grape", "mobile"];
+// console.log(fruits.indexOf("grape"))
+
+// lastIndexOf(item, start)
+
+// let position = fruits.lastIndexOf("orange", 3 );
+// console.log(position);
+
+// arra.includes(item)  --> it will return boolean value
+// console.log(fruits.includes("john"))
+
+// find(item) --> it will return the element
+// let x = [1, 14, 3, 4, 5, 6];
+// // even or odd  (num %2 === 0)
+
+// let evenNumbers = x.find((i) => i % 2 === 0);
+// console.log(evenNumbers);
+
+// sorting methods --> by default in ascending order
+
+let fruits = ["banana", "apple", "orange", "grape", "mobile"];
+// sort()
+// console.log(fruits.sort());
+// let sortedFruites = (a, b) => b.localeCompare(a);
+// fruits.sort(sortedFruites);
+// console.log(fruits);
+
+let x = [3, 14, 3, 1, 2, 4, 5, 6];
+// console.log(x.sort())
+// let numbers = (a, b) => b - a;
+// x.sort(numbers);
+// console.log(x);
+
+// toSorted
+// let sortedFruits = fruits.toSorted();
+// console.log(sortedFruits);
+// toReversed()
+// let revers = fruits.toReversed();
+// console.log(revers);
+
+// let reverseNumbers = x.toReversed();
+// console.log(reverseNumbers);
+
+// for loops
+
+// iteration methods
+// loops
+// map
+// filter
+// reduce
+
