@@ -597,14 +597,13 @@
 
 // sorting methods --> by default in ascending order
 
-let fruits = ["banana", "apple", "orange", "grape", "mobile"];
+// let fruits = ["banana", "apple", "orange", "grape", "mobile"];
 // sort()
 // console.log(fruits.sort());
 // let sortedFruites = (a, b) => b.localeCompare(a);
 // fruits.sort(sortedFruites);
 // console.log(fruits);
 
-let x = [3, 14, 3, 1, 2, 4, 5, 6];
 // console.log(x.sort())
 // let numbers = (a, b) => b - a;
 // x.sort(numbers);
@@ -627,4 +626,151 @@ let x = [3, 14, 3, 1, 2, 4, 5, 6];
 // map
 // filter
 // reduce
+
+// let x = [3, 14, 3, 1, 2, 4, 5, 6];
+
+// for loop
+// for each
+// map
+// filter
+// reduce
+
+// for (let i = 0; i < x.length; i++) {
+//   console.log(x[i] + 2);
+// }
+
+// let sum = 0;
+// for (let i = 0; i < x.length; i++) {
+//   // sum = sum + x[i]
+//   sum += x[i];
+// }
+
+// console.log(sum)
+
+// finding max number in array
+// let x = [3, 14, 3, 1, 2, 4, 5, 6];
+// let min = x[0]; //3
+
+// for (let i = 0; i < x.length; i++) {
+//   if (x[i] < min) {
+//     min = x[i];
+//   }
+// }
+
+// console.log(min);
+
+let fruits = [
+  "banana",
+  "banana",
+  "apple",
+  "orange",
+  "apple",
+  "grape",
+  "grape",
+  "mobile",
+];
+
+// { banana :1, apple: 2, orange: 2}
+
+// let count = {};
+// for (let i = 0; i < fruits.length; i++) {
+//   let fruit = fruits[i];
+//   if (count[fruit]) {
+//     count[fruit]++;
+//   } else {
+//     count[fruit] = 1;
+//   }
+// }
+// console.log(count);
+
+// let x = [3, 14, 3, 1, 2, 4, 5, 6];
+// MAP
+
+// x.map((i)=> {
+//     console.log(i + 2)
+// })
+// %2===0
+// let sum = x.map((i) => i + 2);
+// console.log(sum);
+
+// filter (if)
+// let even = x.filter((i) => i % 2 === 0);
+// console.log(even);
+
+let users = [
+  { name: "John", age: 25, country: "USA" },
+  { name: "Alice", age: 30, country: "UK" },
+  { name: "Bob", age: 20, country: "USA" },
+  { name: "Charlie", age: 28, country: "USA" },
+  { name: "David", age: 35, country: "UK" },
+];
+
+let persons = users.filter((i) => i.country === "USA");
+console.log(persons);
+
+// REDUCE
+// let x = [3, 14, 3, 1, 2, 4, 5, 6]; // single value
+// let sum = x.reduce((i, j) => i - j);
+// console.log(sum);
+
+// string
+// using "" '' ``
+// at()
+// chatAt()
+// concat()
+// includes()
+// indexOf()
+// length
+// replace
+// split()
+// slice
+// splice
+// substr
+// toLowerCase
+// toUpperCase
+// trim
+
+// let x = "Hello world";
+// console.log(x.length)
+// at  --> it will return indexed character from a string
+// let character = x.at(0);
+// let character = x.charAt(8);
+// console.log(character);
+
+// concat --> it will add two or more strings
+
+// let result = x.concat("kajhga")
+// console.log(result)
+
+// includes --> it will return a boolean values
+// let rsult = x.includes("j")
+// console.log(rsult)
+
+// indexOf
+// let rsult = x.indexOf("w");
+// console.log(rsult);
+
+// replace -->
+
+// let result = x.replace("Hello", "Hiii")
+// console.log(result)
+// let x = "Hello world";
+
+// let result = x.split("")  // string to array
+// console.log(result)
+
+// let result = x.slice(2, 8)
+// console.log(result);
+
+// substr, substring
+// let result = x.substr(1, 8);
+// let result = x.substring(1, 8);
+// console.log(result);
+
+// toLowerCase
+// let result = x.toUpperCase();
+// console.log(result)
+
+
+// 
 
