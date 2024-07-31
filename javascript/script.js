@@ -697,16 +697,18 @@ let fruits = [
 // let even = x.filter((i) => i % 2 === 0);
 // console.log(even);
 
-let users = [
-  { name: "John", age: 25, country: "USA" },
-  { name: "Alice", age: 30, country: "UK" },
-  { name: "Bob", age: 20, country: "USA" },
-  { name: "Charlie", age: 28, country: "USA" },
-  { name: "David", age: 35, country: "UK" },
-];
+// let users = [
+//   { name: "John", age: 25, country: "USA" },
+//   { name: "Alice", age: 30, country: "UK" },
+//   { name: "Bob", age: 20, country: "USA" },
+//   { name: "Charlie", age: 28, country: "USA" },
+//   { name: "David", age: 35, country: "UK" },
+// ];
 
-let persons = users.filter((i) => i.country === "USA");
-console.log(persons);
+// let persons = users
+//   .filter((i) => i.country === "USA")
+//   .map((user) => user.name);
+// console.log(persons);
 
 // REDUCE
 // let x = [3, 14, 3, 1, 2, 4, 5, 6]; // single value
@@ -771,6 +773,96 @@ console.log(persons);
 // let result = x.toUpperCase();
 // console.log(result)
 
+// const products = [
+//   {
+//     id: 1,
+//     name: "Laptop",
+//     price: 1000,
+//     inStock: true,
+//   },
+//   {
+//     id: 2,
+//     name: "SmartPhone",
+//     price: 800,
+//     inStock: false,
+//   },
+//   {
+//     id: 3,
+//     name: "Tablet",
+//     price: 600,
+//     inStock: true,
+//   },
+//   {
+//     id: 4,
+//     name: "Headphones",
+//     price: 400,
+//     inStock: true,
+//   },
+//   {
+//     id: 5,
+//     name: "SmartWatch",
+//     price: 300,
+//     inStock: false,
+//   },
+// ];
 
-// 
+// DOM --> Document Object Model
+// it represents the structure of a web page/document
+// we can access the html elements
 
+// using class
+// using ID
+
+// query selector
+// query selector all
+
+// tag name
+
+// let heading = document.getElementById("heading")
+// let button = document.getElementsByClassName("btn");
+
+// let heading = document.querySelector(".heading");
+// heading.style.color = "red";
+
+// let heading = document.querySelectorAll(".heading")[0]
+// heading.style.color = "red";
+
+// let heading = document.getElementsByTagName("h1")[0]
+// heading.style.color = "red";
+// let btn = document.getElementById("btn");
+// btn.addEventListener("click", changeColor);
+// function changeColor() {
+//   let colors = ["red", "blue", "yellow"];
+//   let box = document.getElementsByClassName("box");
+//   for (let i = 0; i < box.length; i++) {
+//     box[i].style.backgroundColor = colors[i % colors.length];
+//   }
+// }
+
+// btn.addEventListener("click", () => {
+//   alert("Hello");
+// });
+
+let btn = document.getElementById("btn");
+let title = document.getElementById("title");
+
+btn.addEventListener("click", myFunc);
+// btn.addEventListener("click", ()=>{
+
+// })
+
+function myFunc() {
+  // title.style.color = "red";
+  // title.style.fontSize = "100px";
+  // title.innerHTML = "<p>Welcome</p>";
+  // title.innerText = "<p>Welcome</p>"
+}
+
+// innterHTML
+// innterText
+
+// fetch
+// promises
+// async, await
+// callback functions
+// closures
