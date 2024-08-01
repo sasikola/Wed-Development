@@ -773,38 +773,53 @@ let fruits = [
 // let result = x.toUpperCase();
 // console.log(result)
 
-// const products = [
-//   {
-//     id: 1,
-//     name: "Laptop",
-//     price: 1000,
-//     inStock: true,
-//   },
-//   {
-//     id: 2,
-//     name: "SmartPhone",
-//     price: 800,
-//     inStock: false,
-//   },
-//   {
-//     id: 3,
-//     name: "Tablet",
-//     price: 600,
-//     inStock: true,
-//   },
-//   {
-//     id: 4,
-//     name: "Headphones",
-//     price: 400,
-//     inStock: true,
-//   },
-//   {
-//     id: 5,
-//     name: "SmartWatch",
-//     price: 300,
-//     inStock: false,
-//   },
-// ];
+// map, filter and reduce
+
+const products = [
+  {
+    id: 1,
+    name: "Laptop",
+    price: 1000,
+    inStock: true,
+  },
+  {
+    id: 2,
+    name: "SmartPhone",
+    price: 800,
+    inStock: false,
+  },
+  {
+    id: 3,
+    name: "Tablet",
+    price: 600,
+    inStock: true,
+  },
+  {
+    id: 4,
+    name: "Headphones",
+    price: 400,
+    inStock: true,
+  },
+  {
+    id: 5,
+    name: "SmartWatch",
+    price: 300,
+    inStock: false,
+  },
+];
+
+// 1. filter the products using stock
+
+let inStockProducts = products.filter((product) => product.inStock === true);
+console.log(inStockProducts);
+
+// 2. iterate the three object to get the price
+let inStockPrice = inStockProducts.map((product) => product.price);
+console.log(inStockPrice);
+
+// 3. using reduce method
+let totalPrice = inStockPrice.reduce((prev, curr) => prev + curr);
+console.log(totalPrice);
 
 // DOM --> Document Object Model
 // it represents the structure of a web page/document
@@ -843,20 +858,20 @@ let fruits = [
 //   alert("Hello");
 // });
 
-let btn = document.getElementById("btn");
-let title = document.getElementById("title");
+// let btn = document.getElementById("btn");
+// let title = document.getElementById("title");
 
-btn.addEventListener("click", myFunc);
+// btn.addEventListener("click", myFunc);
 // btn.addEventListener("click", ()=>{
 
 // })
 
-function myFunc() {
-  // title.style.color = "red";
-  // title.style.fontSize = "100px";
-  // title.innerHTML = "<p>Welcome</p>";
-  // title.innerText = "<p>Welcome</p>"
-}
+// function myFunc() {
+// title.style.color = "red";
+// title.style.fontSize = "100px";
+// title.innerHTML = "<p>Welcome</p>";
+// title.innerText = "<p>Welcome</p>"
+// }
 
 // innterHTML
 // innterText
@@ -866,3 +881,50 @@ function myFunc() {
 // async, await
 // callback functions
 // closures
+
+// let heading1 = document.getElementsByClassName("heading1")[0]
+// let heading2 = document.getElementById("heading2");
+
+// let heading1 = document.getElementsByTagName("h1")[0];
+// let heading2 = document.getElementsByTagName("h2")[0];
+
+// heading2.style.color = "red";
+// heading1.style.color = "red";
+
+//
+
+// synchrouns and asynchrous
+// fetch
+// promises  ->  pending, fullfill(resovlve), reject
+// async, await  --> handling promises
+// try catch  --> error handling
+
+// function myFucn async(){
+
+//   try {
+//     let todos = await fetch("https://jsonplaceholder.typicode.com/todos")
+//     .then((res) => res.json())
+//     .then((data) => console.log(data));
+//   console.log(todos);
+//   } catch (error) {
+//     console.log(error)
+//   }
+
+// }
+
+async function myFunc() {
+  try {
+    let users = await fetch("https://jsonplaceholder.typicode.com/users")
+      .then((res) => res.json())
+      .then((data) => console.log(data));
+  } catch (error) {
+    console.log(error);
+  }
+}
+// callback --> it is a function that is passed as an argument of another function
+// API
+// ui  -> request
+// server (logics)
+// database
+
+
